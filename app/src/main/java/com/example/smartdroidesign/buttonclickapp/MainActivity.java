@@ -30,10 +30,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 numTimesClick = numTimesClick + 1;
-                    String result = "\nThe button got tapped " + numTimesClick + " time";
+                    String result = "The button got tapped " + numTimesClick + " time";
                     if (numTimesClick != 1) {
                         result += "s";
                     }
+                    result += "\n";
                     textView.append(result);
                 }
         };
